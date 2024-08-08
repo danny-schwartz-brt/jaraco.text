@@ -230,7 +230,7 @@ def unwrap(s):
 
 
 lorem_ipsum: str = (
-    files(__name__).joinpath('Lorem ipsum.txt').read_text(encoding='utf-8')
+    files(__name__).joinpath('Lorem_ipsum.txt').read_text(encoding='utf-8')
 )
 
 
@@ -637,7 +637,7 @@ def lines_from(input):
     """
     Generate lines from a :class:`importlib.resources.abc.Traversable` path.
 
-    >>> lines = lines_from(files(__name__).joinpath('Lorem ipsum.txt'))
+    >>> lines = lines_from(files(__name__).joinpath('Lorem_ipsum.txt'))
     >>> next(lines)
     'Lorem ipsum...'
     >>> next(lines)
